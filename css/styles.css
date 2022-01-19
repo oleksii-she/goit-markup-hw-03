@@ -292,12 +292,16 @@ img {
   flex-wrap: wrap;
 }
 .gallery-list {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
   width: 370px;
+
+  background: #ffffff;
   border: 1px solid #eeeeee;
 }
-.gallery-list + .gallery-list {
-  margin-left: 30px;
-  margin-bottom: 30px;
+.gallery-list:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* Footer */
