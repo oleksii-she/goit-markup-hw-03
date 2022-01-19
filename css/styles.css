@@ -32,9 +32,6 @@ li {
 }
 img {
   display: block;
-
-  max-width: 100%;
-  height: auto;
 }
 .conteiner {
   width: 1200px;
