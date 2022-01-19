@@ -12,10 +12,38 @@ body {
   background-color: var(--main-cover_color);
   font-family: 'roboto', sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style-type: none;
 }
+img {
+  display: block;
 
+  max-width: 100%;
+  height: auto;
+}
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -41,6 +69,28 @@ li {
 .logo-color {
   color: #000000;
 }
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid #ececec;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .menu-nav {
   color: var(--title-text-color);
@@ -56,6 +106,13 @@ li {
   color: var(--hove-text-color);
 }
 
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-item + .contacts-item {
+  margin-left: 50px;
+}
 .contacts {
   text-decoration: none;
   font-weight: 500;
@@ -71,12 +128,20 @@ li {
 }
 /* заказ услуг */
 .service {
-  background-color: #2f303a;
+  background: #2f303a;
 }
+.service-controls {
+  text-align: center;
+}
+
 .service-text {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
+
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--main-cover_color);
@@ -95,13 +160,29 @@ li {
   color: var(--main-cover_color);
 }
 /* особености*/
+
+.feature-list {
+  display: flex;
+}
+
+.feature-item + .feature-item {
+  margin-left: 30px;
+}
+
+.feature-item {
+  width: 270px;
+}
 .feature-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
 .feature-text {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -110,23 +191,54 @@ li {
 /* Чем мы занимаемся */
 
 .specifcation-title {
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+}
+.specifcation-list {
+  display: flex;
+  justify-content: center;
+}
+.specifcation-item + .specifcation-item {
+  margin-left: 30px;
 }
 /* наша команда */
+
+.team-name-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-title {
+  margin-bottom: 50px;
+
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
 }
+.taam-list {
+  display: flex;
+}
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item + .team-item {
+  margin-left: 30px;
+}
 .team-member {
+  margin-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
 .team-text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -135,7 +247,14 @@ li {
 /* Портфолио */
 
 /* Кнопки */
-
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+.portolio-item + .portolio-item {
+  margin-left: 8px;
+  margin-bottom: 50px;
+}
 .portfolio-btn {
   font-family: inherit;
   cursor: pointer;
@@ -150,9 +269,14 @@ li {
   color: var(--main-cover_color);
 }
 
-/* Портфолио */
+/* галерея портфлио */
+.portfollio-name-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 .portfolio-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -163,16 +287,38 @@ li {
   color: var(--paragraph-text-color);
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-list {
+  width: 370px;
+  border: 1px solid #eeeeee;
+}
+.gallery-list + .gallery-list {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 /* Footer */
 
-footer {
+.address {
+  font-style: inherit;
+}
+.address-list {
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 .logo-color-footer {
   color: #ffffff;
 }
 .location {
-  font-style: inherit;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -185,7 +331,8 @@ footer {
 }
 
 .contacts-footer {
-  font-style: inherit;
+  display: block;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
