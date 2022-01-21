@@ -145,8 +145,13 @@ img {
   color: var(--main-cover_color);
 }
 .service-btn {
-  width: 200px;
-  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: transparent;
+  border-radius: 6px;
+
   cursor: pointer;
   color: var(--main-cover_color);
   background-color: var(--hove-text-color);
