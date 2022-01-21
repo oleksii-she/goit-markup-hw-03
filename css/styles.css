@@ -150,7 +150,7 @@ img {
   padding-left: 32px;
   padding-right: 32px;
   border: transparent;
-  border-radius: 6px;
+  border-radius: 4px;
 
   cursor: pointer;
   color: var(--main-cover_color);
@@ -274,7 +274,7 @@ img {
   padding-right: 22px;
   padding-left: 22px;
   border: transparent;
-  border-radius: 6px;
+  border-radius: 4px;
 
   font-family: inherit;
   cursor: pointer;
