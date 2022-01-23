@@ -332,8 +332,8 @@ img {
   font-style: inherit;
   margin-top: 20px;
 }
-.address-list {
-  margin-bottom: 9px;
+.address-item {
+  margin-top: 9px;
 }
 .footer {
   padding-top: 60px;
